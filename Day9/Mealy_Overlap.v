@@ -33,5 +33,5 @@ module seq_detector_1101(input bit clk, rst_n, x, output z);
       default: next_state = A;
     endcase
   end
-  assign z = (state == D) && (x == 0)? 1:0;
+  assign z = (state == D) && (x == 1)? 1:0;
 endmodule
